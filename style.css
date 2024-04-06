@@ -132,3 +132,207 @@ h4 {
   flex-direction: column;
   gap: 1em;
 }
+
+/* ------------------
+ * Structure Styling
+ *
+
+  00. Reusable selectors
+  01.HEADER
+    a. Header Top
+    b. Header Nav
+    c. Header Main, Departments Category
+    d. Search Form
+    e. Responsive MENU -Off Canvas
+  02. SLIDER
+  03. BRANDS
+  04. PRODUCT
+    a. Global product
+    b. Big product
+    c. Mini product
+    d. Main product
+  05. BANNER
+    a. News letter
+    b. Widgets
+    c. Footer info
+  06. BOTTOM MENU
+    a. Search
+  07. OVERLAY
+  08. PAGE SINGLE
+    a. Breadcrumb
+    b. Product details
+    c. Product description
+    d. Product review
+    e. Product review form
+  09. PAGE SINGLE: SPECIAL OFFER
+  10. PAGE CATEGORY
+    a. Sidebar products filter
+    b. Product block
+  11. CART
+  12. PAGE CART
+  13. PAGE CHECKOUT
+  14. MODAL
+  15. RESPONSIVE
+
+ *
+ * ------------------*/
+
+/* ------------------
+ * 01.HEADER
+ * ------------------*/
+
+/* ------------------
+      * 01.HEADER
+      *   a. Header Top
+      * ------------------*/
+
+/* ------------------
+      * 01.HEADER
+      *   b. Header Nav
+      * ------------------*/
+
+/* ------------------
+      * 01.HEADER
+      *   c. Header Main, Departments Category
+      * ------------------*/
+
+/* ------------------
+      * 01.HEADER
+      *   d. Search Form
+      * ------------------*/
+
+/* ------------------
+      * 01.HEADER
+      *   e. Responsive MENU -Off Canvas
+      * ------------------*/
+
+/* ------------------
+ * 02. SLIDER
+ * ------------------*/
+
+/* ------------------
+ * 03. BRANDS
+ * ------------------*/
+
+/* ------------------
+ * 04. PRODUCT
+ * ------------------*/
+
+/* ------------------
+      * 04. PRODUCT
+      *   a. Global product
+      * ------------------*/
+
+/* ------------------
+      * 04. PRODUCT
+      *   b. Big product
+      * ------------------*/
+
+/* ------------------
+      * 04. PRODUCT
+      *   c. Mini product
+      * ------------------*/
+
+/* ------------------
+      * 04. PRODUCT
+      *   d. Main product
+      * ------------------*/
+
+/* ------------------
+ * 05. BANNER
+ * ------------------*/
+
+/* ------------------
+      * 05. BANNER
+      *   a. News letter
+      * ------------------*/
+
+/* ------------------
+      * 05. BANNER
+      *   b. Widgets
+      * ------------------*/
+
+/* ------------------
+      * 05. BANNER
+      *   c. Footer info
+      * ------------------*/
+
+/* ------------------
+ * 06. BOTTOM MENU
+ * ------------------*/
+
+/* ------------------
+      * 06. BOTTOM MENU
+      *   a. Search
+      * ------------------*/
+
+/* ------------------
+ * 07. OVERLAY
+ * ------------------*/
+
+/* ------------------
+ * 08. PAGE SINGLE
+ * ------------------*/
+
+/* ------------------
+      * 08. PAGE SINGLE
+      *   a. Breadcrumb
+      * ------------------*/
+
+/* ------------------
+      * 08. PAGE SINGLE
+      *   b. Product details
+      * ------------------*/
+
+/* ------------------
+      * 08. PAGE SINGLE
+      *   c. Product description
+      * ------------------*/
+
+/* ------------------
+      * 08. PAGE SINGLE
+      *   d. Product review
+      * ------------------*/
+
+/* ------------------
+      * 08. PAGE SINGLE
+      *   e. Product review form
+      * ------------------*/
+
+/* ------------------
+ * 09. PAGE SINGLE: SPECIAL OFFER
+ * ------------------*/
+
+/* ------------------
+ * 10. PAGE CATEGORY
+ * ------------------*/
+
+/* ------------------
+      * 10. PAGE CATEGORY
+      *   a. Sidebar products filter
+      * ------------------*/
+
+/* ------------------
+      * 10. PAGE CATEGORY
+      *   b. Product block
+      * ------------------*/
+
+/* ------------------
+ * 11. CART
+ * ------------------*/
+
+/* ------------------
+ * 12. PAGE CART
+ * ------------------*/
+
+/* ------------------
+ * 13. PAGE CHECKOUT
+ * ------------------*/
+
+/* ------------------
+ * 14. MODAL
+ * ------------------*/
+
+/* ------------------
+ * 15. RESPONSIVE
+ * ------------------*/
