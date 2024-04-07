@@ -147,7 +147,7 @@ h4 {
 }
 .icon-small {
   font-size: 1.25em;
-  margin: auto;
+  margin-left: auto;
 }
 .icon-large {
   font-size: 1.75em;
@@ -162,6 +162,10 @@ h4 {
   height: var(--percent100);
   width: var(--percent100);
   display: block;
+}
+.mini-text {
+  font-size: var(--font-smaller);
+  color: var(--light-text-color);
 }
 
 /* ------------------
@@ -390,11 +394,90 @@ nav .fly-item {
       * 01.HEADER
       *   c. Header Main, Departments Category
       * ------------------*/
+.header-main {
+  background-color: var(--secondary-dark-color);
+  padding: 1.5em 0;
+  margin-bottom: 2em;
+}
+.dpt-cat {
+  position: relative;
+  z-index: 10;
+}
+.dpt-cat .dpt-head {
+  position: relative;
+  width: 300px;
+  padding: 0.75em 1.5em;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 7px 7px 0 0;
+  margin-bottom: -2.15em;
+}
+.dpt-cat .dpt-head .mini-text {
+  color: var(--light-bg-color);
+}
+.dpt-cat .dpt-trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.3em;
+  height: 60px;
+  width: 60px;
+}
+.dpt-menu > ul > li > a {
+  font-size: var(--font-small);
+  height: 46px;
+  align-items: center;
+}
+.dpt-menu .has-child:hover ul {
+  display: block;
+}
+.dpt-menu .has-child li a:hover {
+  text-decoration: underline;
+}
 
 /* ------------------
       * 01.HEADER
       *   d. Search Form
       * ------------------*/
+.header-main .right {
+  flex: 1;
+}
+.header-main .right .search {
+  position: relative;
+}
+form.search input {
+  line-height: 3.25em;
+  padding: 0 7em 0 4.5em;
+  border: 0;
+  outline: 0;
+  border-radius: 7px;
+  font-size: 0.9em;
+  font-weight: var(--fw3);
+  width: var(--percent100);
+}
+form.search :where(span, button) {
+  position: absolute;
+  top: 0;
+  padding: 0.55em 1.5em;
+  font-size: 1em;
+  height: var(--percent100);
+  color: var(--light-text-color);
+}
+form.search button {
+  right: 0;
+  border: 0;
+  outline: 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 0 7px 7px 0;
+  font-size: 0.875em;
+  font-weight: var(--fw6);
+  cursor: pointer;
+  transition: var(--trans-background);
+}
+form.search button:hover {
+  background-color: var(--dark-color);
+}
 
 /* ------------------
       * 01.HEADER
@@ -619,5 +702,77 @@ nav .fly-item {
     font-weight: var(--fw8);
     text-align: center;
     color: var(--secondary-dark-color);
+  }
+  /* Search form -MainHeader */
+  .header-main .right {
+    max-width: 600px;
+    margin-left: auto;
+  }
+  /* Department menu -MainHeader */
+  .dpt-menu {
+    position: absolute;
+    top: var(--percent100);
+    width: 300px;
+    border: 1px solid var(--border-color);
+    border-top: 0;
+    border-bottom: 0;
+    background-color: var(--white-color);
+    cursor: pointer;
+  }
+  .dpt-menu > ul > li > a {
+    font-weight: var(--fw5);
+    padding: 0 1.5em;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .dpt-menu .has-child > ul,
+  .dpt-menu .mega {
+    position: absolute;
+    top: 0;
+    left: var(--percent100);
+    width: var(--percent100);
+    height: auto;
+    min-height: var(--percent100);
+    line-height: 2.5em;
+    padding: 1.5em;
+    font-size: var(--font-small);
+    border: 1px solid var(--border-color);
+    border-top: 0;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: none;
+  }
+  .dpt-menu .beauty > ul {
+    background-image: url("/assets/menu/menu_bg1.jpg");
+  }
+  .dpt-menu .electric > ul {
+    background-image: url("/assets/menu/menu_bg2.jpg");
+  }
+  .dpt-menu .fashion > ul {
+    background-image: url("/assets/menu/menu_bg3.jpg");
+  }
+  .dpt-menu .homekit .mega {
+    background-image: url("/assets/menu/menu_bg4.jpg");
+  }
+  .dpt-menu .has-child > :where(ul, .mega)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 80%
+    );
+  }
+  .dpt-menu .mega {
+    width: auto;
+    min-width: var(--percent100);
+  }
+
+  .dpt-menu .has-child:hover .mega {
+    display: flex;
   }
 }
