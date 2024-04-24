@@ -1032,6 +1032,35 @@ form.search button:hover {
       * 05. BANNER
       *   c. Footer info
       * ------------------*/
+.footer-info {
+  padding: 3.5em 0 5em;
+}
+.footer-info .flexcol {
+  align-items: center;
+  gap: 0;
+}
+.footer-info .logo a {
+  margin: 0 0 1em -0.75em;
+}
+.footer-info .socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  width: 40px;
+  height: 40px;
+  margin: 0.25em;
+  background-color: var(--light-bg-color);
+  border-radius: var(--percent50);
+  transition: var(--trans-background);
+}
+.footer-info .socials a:hover {
+  background-color: var(--border-color);
+}
+.footer-info .mini-text {
+  margin-top: 2em;
+  text-align: center;
+}
 
 /* ------------------
  * 06. BOTTOM MENU
