@@ -1023,6 +1023,10 @@ form.search button:hover {
       * 05. BANNER
       *   b. Widgets
       * ------------------*/
+.wedgets {
+  padding: 3.5em 2.5em;
+  background-color: var(--light-bg-color);
+}
 
 /* ------------------
       * 05. BANNER
@@ -1118,7 +1122,8 @@ form.search button:hover {
     font-size: 1.25em;
   }
   .products.mini,
-  .banner .row {
+  .banner .row,
+  .wedgets .row {
     flex: 0 0 50%;
   }
   .products.main .item {
@@ -1303,7 +1308,8 @@ form.search button:hover {
   .products.big .media {
     max-width: 373px;
   }
-  .products.main .item {
+  .products.main .item,
+  .wedgets .row {
     flex: 0 0 25%;
   }
   /* Newsletter */
