@@ -1139,6 +1139,22 @@ form.search button:hover {
 /* ------------------
  * 07. OVERLAY
  * ------------------*/
+.overlay {
+  position: fixed;
+  height: var(--percent100);
+  width: var(--percent100);
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  will-change: visibility, opacity;
+}
+.show-menu .overlay {
+  visibility: inherit;
+  opacity: 1;
+}
 
 /* ------------------
  * 08. PAGE SINGLE
