@@ -52,3 +52,14 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
+// Toggle Mobile bottom search bar
+const searchButton = document.querySelector(".toggle-search"),
+  searchClose = document.querySelector(".search-close"),
+  bodyContainer = document.querySelector(".site");
+searchButton.addEventListener("click", function () {
+  bodyContainer.classList.toggle("show-search");
+});
+searchClose.addEventListener("click", function () {
+  bodyContainer.classList.remove("show-search");
+});
