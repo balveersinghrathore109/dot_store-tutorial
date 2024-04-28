@@ -1162,27 +1162,40 @@ form.search button:hover {
 
 /* ------------------
       * 08. PAGE SINGLE
-      *   a. Breadcrumb
+      *   a. Department Menu
+      * ------------------*/
+.page-home .dpt-cat .dpt-trigger,
+.dpt-trigger .ri-close-line,
+.show-department .dpt-trigger .ri-menu-3-line {
+  display: none;
+}
+.show-department .dpt-trigger .ri-close-line {
+  display: block;
+}
+
+/* ------------------
+      * 08. PAGE SINGLE
+      *   b. Breadcrumb
       * ------------------*/
 
 /* ------------------
       * 08. PAGE SINGLE
-      *   b. Product details
+      *   c. Product details
       * ------------------*/
 
 /* ------------------
       * 08. PAGE SINGLE
-      *   c. Product description
+      *   d. Product description
       * ------------------*/
 
 /* ------------------
       * 08. PAGE SINGLE
-      *   d. Product review
+      *   e. Product review
       * ------------------*/
 
 /* ------------------
       * 08. PAGE SINGLE
-      *   e. Product review form
+      *   f. Product review form
       * ------------------*/
 
 /* ------------------
@@ -1422,11 +1435,19 @@ form.search button:hover {
   .wedgets .row {
     flex: 0 0 25%;
   }
-  /* Newsletter */
 
+  /* Newsletter */
   .newsletter .box {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  /* Single Page */
+  #page:not(.page-home) .dpt-menu {
+    display: none;
+  }
+  #page.show-department .dpt-menu {
+    display: block;
   }
 }

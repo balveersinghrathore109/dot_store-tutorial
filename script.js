@@ -63,3 +63,11 @@ searchButton.addEventListener("click", function () {
 searchClose.addEventListener("click", function () {
   bodyContainer.classList.remove("show-search");
 });
+
+// Toggle Department on single pages
+const deptBtn = document.querySelector(".dpt-cat .dpt-trigger"),
+  deptClass = document.querySelector(".site");
+
+deptBtn.addEventListener("click", function () {
+  deptClass.classList.toggle("show-department");
+});
