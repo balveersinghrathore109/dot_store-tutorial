@@ -71,3 +71,28 @@ const deptBtn = document.querySelector(".dpt-cat .dpt-trigger"),
 deptBtn.addEventListener("click", function () {
   deptClass.classList.toggle("show-department");
 });
+
+// Slider product thumbnail images
+var productThumbs = new Swiper(".small-image", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSliderProgress: true,
+  breakPoints: {
+    481: {
+      spaceBetween: 32,
+    },
+  },
+});
+var productImage = new Swiper(".big-image", {
+  loop: true,
+  autoHeight: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: productThumbs,
+  },
+});

@@ -1197,6 +1197,63 @@ form.search button:hover {
       * 08. PAGE SINGLE
       *   c. Product details
       * ------------------*/
+.product.one .item {
+  flex-direction: column;
+}
+.product.one .row:first-child .item {
+  position: relative;
+}
+.product.one .price .discount {
+  font-size: 1em;
+  font-weight: var(--fw7);
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  z-index: 2;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  border-radius: var(--percent50);
+  margin: 0.5em;
+}
+.product.one :where(.big-image, .small-image) {
+  overflow: hidden;
+}
+.product.one .big-image {
+  position: relative;
+  margin-bottom: 1em;
+}
+.product.one :where(.big-image, .small-image) img {
+  object-fit: cover;
+  width: var(--percent100);
+  height: var(--percent100);
+  display: block;
+}
+.product.one .thumbnail-show {
+  position: relative;
+  width: 130px;
+  height: 110px;
+  overflow: hidden;
+  margin: 0 2em 2em 0;
+}
+.product :is(.swiper-button-next, .swiper-button-prev) {
+  outline: 0;
+  color: var(--secondary-dark-color);
+  transition: var(--trans-background), transform 0.3s;
+}
+.product :is(.swiper-button-next, .swiper-button-prev)::after {
+  font-size: 1.5em;
+}
+.product .big-image:hover .swiper-button-next {
+  transform: translateX(10px);
+}
+.product .big-image:hover .swiper-button-prev {
+  transform: translateX(-10px);
+}
+.product .big-image:hover :is(.swiper-button-next, .swiper-button-prev) {
+  background-color: var(--light-bg-color);
+}
 
 /* ------------------
       * 08. PAGE SINGLE
@@ -1250,9 +1307,20 @@ form.search button:hover {
 /* ------------------
  * 15. RESPONSIVE
  * ------------------*/
-@media screen and (min-width: 481x) {
+@media screen and (min-width: 481px) {
   .products.main .item {
     flex: 0 0 50%;
+  }
+
+  /* single product */
+  .product.one .big-image {
+    margin-bottom: 2em;
+  }
+  .product.one .image-show {
+    height: 680px;
+  }
+  .product.one .thumbnail-show {
+    height: 160px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1266,6 +1334,12 @@ form.search button:hover {
   }
   .products.main .item {
     flex: 0 0 33.3333%;
+  }
+
+  /* single product */
+  .product.one .row {
+    flex: 0 0 50%;
+    width: 50%;
   }
 }
 @media screen and (min-width: 992px) {
