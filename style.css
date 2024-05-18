@@ -686,17 +686,24 @@ form.search button:hover {
 .trending .products {
   flex: 0 0 33.3333%;
 }
-.trending .offer {
+.trending .offer,
+.product.one .offer {
   text-align: center;
   margin-bottom: 1.5em;
 }
-.trending .offer p {
+.trending .offer p,
+.product.one .offer p {
   margin-bottom: 0.5em;
+  text-transform: uppercase;
 }
-.trending .offer ul {
+.trending .offer ul,
+.product.one .offer ul,
+.related-products .offer ul {
   gap: 1em;
 }
-.trending .offer ul li {
+.trending .offer ul li,
+.product.one .offer ul li,
+.related-products .offer ul li {
   position: relative;
   width: 34px;
   height: 34px;
@@ -706,7 +713,9 @@ form.search button:hover {
   background-color: var(--light-bg-color);
   border-radius: 5px;
 }
-.products .offer ul li:not(:last-child)::before {
+.products .offer ul li:not(:last-child)::before,
+.product.one .offer ul li:not(:last-child)::before,
+.related-products .offer ul li:not(:last-child)::before {
   content: ":";
   position: absolute;
   right: -0.6em;
@@ -826,20 +835,24 @@ form.search button:hover {
   color: var(--light-text-color);
   text-decoration: line-through;
 }
-.products .stock .qty {
+.products .stock .qty,
+.product.one .stock .qty {
   display: flex;
   justify-content: space-between;
 }
-.products .stock .bar {
+.products .stock .bar,
+.product.one .stock .bar,
+.related-products .stock .bar {
   height: 3px;
   margin-top: 1em;
   background-color: var(--border-color);
   overflow: hidden;
 }
-.products .stock .available {
+.products .stock .available,
+.product.one .stock .available {
   height: 3px;
   width: 21%;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-dark-color);
 }
 .products .item {
   display: flex;
@@ -895,7 +908,8 @@ form.search button:hover {
       * 04. PRODUCT
       *   d. Main product
       * ------------------*/
-.feature .products .item {
+.feature .products .item,
+.related-products .products .item {
   position: relative;
 }
 .products.main .item {
@@ -1554,6 +1568,43 @@ form.search button:hover {
 /* ------------------
  * 09. PAGE SINGLE: SPECIAL OFFER
  * ------------------*/
+.page-single .stock {
+  margin: 2em 0;
+}
+.page-single .stock .qty span:last-child,
+.page-offer .stock .qty span:last-child {
+  color: initial;
+}
+.page-single .stock .bar {
+  height: 10px !important;
+}
+.page-single .stock .bar .available {
+  margin: 0;
+  border-radius: 0;
+  background-color: var(--secondary-dark-color);
+}
+.related-products .item,
+.related-products .content {
+  height: var(--percent100) ;
+}
+.related-products .offer {
+  margin-top: 0;
+}
+.related-products .offer p.mini-text {
+  /* text-transform: uppercase; */
+  text-align: center;
+  margin: 0 1em 0 0;
+  line-height: 1;
+}
+.related-products .offer ul li {
+  width: 28px;
+  height: 28px;
+  font-size: var(--font-small);
+  padding: .5em .25em;
+}
+.related-products .content .stock {
+  margin-top: auto;
+}
 
 /* ------------------
  * 10. PAGE CATEGORY
