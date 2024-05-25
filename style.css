@@ -2050,6 +2050,74 @@ input[type="range"]::-webkit-slider-thumb {
  * 13. PAGE CHECKOUT
  * ------------------*/
 
+.checkout {
+  margin: 5em 0;
+}
+.checkout .left {
+  padding: 4em;
+  background-color: var(--light-bg-color);
+  box-shadow: 0 15px 70px -8px rgb(0 0 0 / 20%);
+}
+.checkout .item {
+  width: var(--percent100);
+}
+.checkout .left h1 {
+  font-weight: var(--fw3);
+  margin-bottom: 1.5em;
+}
+.checkout form p :where(input, textarea) {
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255 255 255 / 50%);
+  font-family: inherit;
+  width: 100%;
+}
+.checkout p input:focus {
+  background-color: var(--white-color);
+}
+.checkout .left label {
+  position: relative;
+  font-size: var(--font-small);
+}
+.checkout .left label span {
+  position: absolute;
+  top: 0;
+  /* right: -10px; */
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: var(--percent50);
+}
+.checkout p.checkset {
+  flex-direction: row;
+  margin-bottom: 1.5em;
+}
+.checkout p.checkset label {
+  margin: 0 0 0 1em;
+  cursor: pointer;
+}
+.checkout p.checkset input {
+  margin-bottom: unset;
+  display: inline-block !important;
+  width: unset;
+}
+.checkout h2 {
+  padding-top: 0.5em;
+  margin-bottom: 0.75em;
+  border-top: 1px solid var(--border-color);
+}
+.primary-checkout button {
+  display: block;
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+  width: var(--percent100);
+  max-width: 280px;
+  font-size: 1.2em;
+  margin: 3em auto 0;
+}
+
 /* ------------------
  * 14. MODAL
  * ------------------*/
@@ -2113,7 +2181,8 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   /* single product */
-  .product.one .row {
+  .product.one .row,
+  .checkout .item {
     flex: 0 0 50%;
     width: 50%;
   }
