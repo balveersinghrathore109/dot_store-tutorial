@@ -1897,6 +1897,40 @@ input[type="range"]::-webkit-slider-thumb {
 /* ------------------
  * 12. PAGE CART
  * ------------------*/
+.products.cart .form-cart {
+  width: var(--percent100);
+}
+.products.cart table thead th {
+  vertical-align: middle;
+  background-color: var(--light-bg-color);
+}
+.products.cart table :where(th, td) {
+  padding: 2em 1em;
+  text-align: center;
+}
+.products.cart table :where(th, td):first-child {
+  text-align: left;
+  padding-left: 2em;
+}
+.products.cart table td :where(.content, .qty-control, p) {
+  margin: 0;
+  padding: 0;
+}
+.products.cart .qty-control :where(button, input) {
+  width: 32px;
+  height: 32px;
+  padding: 0.25em;
+  text-align: center;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+.products.cart .qty-control button {
+  cursor: pointer;
+}
+.products.cart tbody tr {
+  border-bottom: 1px solid var(--border-color);
+}
 
 /* ------------------
  * 13. PAGE CHECKOUT
@@ -2173,5 +2207,15 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .single-category .product.main .item {
     flex: 0 0 33.3333%;
+  }
+
+  /* Cart Page */
+  .products.cart .form-cart {
+    width: 66%;
+  }
+  .products.cart .cart-summary {
+    width: 34%;
+    padding-left: 2.5em;
+    margin-top: 0;
   }
 }
