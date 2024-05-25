@@ -1168,7 +1168,7 @@ form.search button:hover {
   opacity: 0;
   will-change: visibility, opacity;
 }
-.show-menu .overlay {
+:where(.show-menu, .showmodel) .overlay {
   visibility: inherit;
   opacity: 1;
 }
@@ -2171,6 +2171,16 @@ input[type="range"]::-webkit-slider-thumb {
   text-align: center;
   background-color: var(--light-bg-color);
   z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.2s, visibility 0.2s, opacity 0.2s;
+}
+.showmodel .modal {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s, visibility 1s, opacity 1s;
 }
 .modal .image {
   position: relative;
