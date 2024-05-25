@@ -2210,6 +2210,24 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: var(--secondary-dark-color);
 }
 
+.backtotop a {
+  position: fixed;
+  bottom: 6em;
+  right: 2em;
+  text-align: center;
+  gap: 0;
+  font-size: var(--font-small);
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  z-index: 999;
+  background-color: var(--light-bg-color);
+  transition: var(--trans-background-color);
+}
+.backtotop a:hover {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
 /* ------------------
  * 15. RESPONSIVE
  * ------------------*/
