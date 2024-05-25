@@ -1932,6 +1932,42 @@ input[type="range"]::-webkit-slider-thumb {
   border-bottom: 1px solid var(--border-color);
 }
 
+.page-cart .products .item {
+  flex-direction: column;
+}
+.cart-summary {
+  width: var(--percent100);
+  margin: 2.5em 0 4em;
+}
+.cart-summary .item {
+  background-color: var(--light-bg-color);
+}
+.cart-summary .coupon {
+  position: relative;
+}
+.cart-summary .coupon input {
+  font-size: 1.1em;
+  outline: 0;
+  width: var(--percent100);
+  padding: 0 1.5em;
+  line-height: 50px;
+  background-color: var(--white-color);
+  border: 3px solid var(--dark-color);
+}
+.cart-summary .coupon button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+  padding: 0 2.5em;
+  line-height: 56px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
 /* ------------------
  * 13. PAGE CHECKOUT
  * ------------------*/
